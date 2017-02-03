@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}
