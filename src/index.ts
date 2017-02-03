@@ -1,7 +1,7 @@
 import * as Q from 'q';
 import Promise = Q.Promise;
 
-export class XHRequest{
+export class BoostwebinarsClient{
     private baseUrl: string;
     private accessToken: string;
 
@@ -10,8 +10,8 @@ export class XHRequest{
         this.accessToken = accessToken || '';
     }
 
-    exampleRequest(): Promise<any>{
-        let requestData: IRequestData = {type: 'GET', uri: '/examples/4'};
+    webinars(): Promise<any>{
+        let requestData: IRequestData = {type: 'GET', uri: '/webinars/get_recent_webinars'};
         return this.request(requestData)
     }
 
